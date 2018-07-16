@@ -12,15 +12,14 @@ var express    = require("express"),
     Comment    = require("./models/comment"),
     User       = require("./models/user"),
     seedDB     = require("./seeds");
-
     
 // REQUIRING ROUTES
 var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index");
 
-mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect("mongodb://bernardo:yelpcamp13@ds137651.mlab.com:37651/yelpcamp_sandbox");
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp"
+mongoose.connect(url);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
