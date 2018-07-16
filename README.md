@@ -1,9 +1,7 @@
 # [YelpCamp](https://cryptic-bayou-63287.herokuapp.com/)
 > Developed by Bernardo Mendonca during Colt Steele's Web Developer Bootcamp
 
-[![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
 
 YelpCamp provides location and price features for Camping sites, including user authentication and authorisation.
 
